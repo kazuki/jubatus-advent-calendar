@@ -45,7 +45,7 @@ def main():
                 for j in range(0, len(data), bsz):
                     c[i].train(data[j:j+bsz])
                 end_time = time.time()
-                print('  {}={}[ms]'.format(n[i], end_time - start_time))
+                print('  {}={}[s]'.format(n[i], end_time - start_time))
                 c[i].clear()
             print()
 
